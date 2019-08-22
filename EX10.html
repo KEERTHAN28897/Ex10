@@ -1,0 +1,94 @@
+<html>
+<head>
+<style>
+.button {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+
+<body>
+<table border="1" cellpadding="15" cellspacing="0" >
+<col width="100">
+<col width="100">
+<col width="100">
+
+<tr>
+<th colspan="3" id="id"></th>
+
+</tr>
+
+<tr>
+<th onclick="f(1)">1</th>
+<th onclick="f(2)">2</th>
+<th onclick="f(3)">3</th>
+</tr>
+
+
+<tr>
+<th onclick="f(4)">4</th>
+<th onclick="f(5)">5</th>
+<th onclick="f(6)">6</th>
+</tr>
+
+
+<tr>
+<th onclick="f(7)">7</th>
+<th onclick="f(8)">8</th>
+<th onclick="f(9)">9</th>
+</tr>
+
+
+<tr>
+<th onclick="f(0)">0</th>
+<th onclick="func("+")">+</th>
+<th onclick="func("-")">-</th>
+</tr>
+
+
+<tr>
+<th onclick= "func("*")">*</th>
+<th onclick= "func("/")">/</th>
+<th onclick= "func("=")">=</th>
+</tr>
+
+
+
+<script>
+var count=0;
+var v=0;
+var prev =0;
+var po="0";
+function f(n)
+{
+
+	
+
+		v=n+(10*v);
+
+	document.getElementById("id").innerHTML+=v;
+	
+}
+
+
+function func(op)
+
+{	
+	
+	prev=prev+v;
+	document.getElementById("id").innerHTML+=op;
+	
+}
+
+
+
+</script>
+
+</body>
+</html>
